@@ -197,7 +197,7 @@ export default function Hero() {
               data-aos="fade-up"
               data-aos-duration="2000"
             >
-              Let's Make Your Best Trip With Us
+              Lets Make Your Best Trip With Us
             </span>
             <div
               className="flex flex-col sm:flex-row"
