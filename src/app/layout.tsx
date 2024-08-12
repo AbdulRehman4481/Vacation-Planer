@@ -3,10 +3,11 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { NextUIProvider } from "@nextui-org/react";
 
-export const inter = Inter({
+const inter = Inter({
   weight: "400",
   subsets: ["latin"],
 });
+
 export default function RootLayout({
   children,
 }: Readonly<{
