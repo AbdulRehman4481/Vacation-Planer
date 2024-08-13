@@ -7,9 +7,9 @@ import { PiMagnifyingGlassPlusLight } from "react-icons/pi";
 export default function Gallery() {
   return (
     <div className="text-center my-24">
-      <h2 className="text-3xl font-bold mb-4 text-[#113D48] font-montez ">
+      <h2 className="text-3xl font-bold mb-4 text-secondary font-montez ">
       Make Your Tour More Pleasure      </h2>
-      <h1 className="text-4xl font-bold mb-8  text-[#113D48]">
+      <h1 className="text-4xl font-bold mb-8  text-secondary">
         Recent Gallery
 
       </h1>

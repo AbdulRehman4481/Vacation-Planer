@@ -1,6 +1,4 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
-
 const images = [
   {
     src: Images.imageD1,
@@ -53,7 +51,7 @@ function Destination() {
         <h2 className="text-3xl font-bold mb-4 font-montez">
           Wonderful Place For You
         </h2>
-        <h1 className="text-4xl font-bold mb-8 text-[#113D48]">
+        <h1 className="text-4xl font-bold mb-8 text-secondary">
           Tour Categories
         </h1>
       </div>

@@ -9,7 +9,7 @@ import Slider from "react-slick";
 const CustomPrevArrow = ({ onClick }: any) => {
   return (
     <div
-      className="absolute hidden  text-white border-1 right-[25px] top-[30%] h-10 sm:flex justify-center items-center w-10 transform -translate-y-1/2 z-10 cursor-pointer hover:bg-[#1CA8CB] rounded-full"
+      className="absolute hidden  text-white border-1 right-[25px] top-[30%] h-10 sm:flex justify-center items-center w-10 transform -translate-y-1/2 z-10 cursor-pointer hover:bg-primary rounded-full"
       onClick={onClick}
     >
       <Image
@@ -26,7 +26,7 @@ const CustomPrevArrow = ({ onClick }: any) => {
 const CustomNextArrow = ({ onClick }: any) => {
   return (
     <div
-      className="absolute hidden  text-white border-1 right-[25px] top-[55%] sm:flex justify-center items-center rotate-180 h-10 w-10 transform -translate-y-1/2 z-10 cursor-pointer hover:bg-[#1CA8CB] rounded-full"
+      className="absolute hidden  text-white border-1 right-[25px] top-[55%] sm:flex justify-center items-center rotate-180 h-10 w-10 transform -translate-y-1/2 z-10 cursor-pointer hover:bg-primary rounded-full"
       onClick={onClick}
     >
       <Image
@@ -69,7 +69,7 @@ export default function Hero() {
     customPaging: (i: number) => (
       <div
         className={`w-1 h-7 rounded-full ${
-          i === activeIndex ? "bg-[#1CA8CB]" : "bg-gray-300"
+          i === activeIndex ? "bg-primary" : "bg-gray-300"
         } transition-colors duration-200`}
       />
     ),
@@ -104,7 +104,7 @@ export default function Hero() {
               data-aos="fade-up"
               data-aos-duration="3000"
             >
-              <button className="relative text-white bg-[#1CA8CB] my-3 px-10 py-4 mr-2 flex justify-center items-center rounded-3xl overflow-hidden group">
+              <button className="relative cursor-pointer text-white bg-primary my-3 px-10 py-4 mr-2 flex justify-center items-center rounded-3xl overflow-hidden group">
                 <span className="relative z-10 flex items-center text-sm sm:text-sm">
                   Explore World{" "}
                   <Image
@@ -115,9 +115,9 @@ export default function Hero() {
                     className=" ml-0 sm:ml-2"
                   />
                 </span>
-                <div className="absolute inset-0 bg-[#15363e] w-0 group-hover:w-full rounded-3xl transition-all duration-300 ease-in-out"></div>
+                <div className="absolute inset-0 bg-secondary w-0 group-hover:w-full rounded-3xl transition-all duration-300 ease-in-out"></div>
               </button>
-              <button className="relative text-white border-1 my-3 px-10 py-4 mr-2 flex justify-center items-center rounded-3xl overflow-hidden group">
+              <button className="relative cursor-pointer text-white border-1 my-3 px-10 py-4 mr-2 flex justify-center items-center rounded-3xl overflow-hidden group">
                 <span className="relative z-10 flex items-center text-sm sm:text-sm">
                   Our Services
                   <Image
@@ -128,7 +128,7 @@ export default function Hero() {
                     className=" ml-0 sm:ml-2"
                   />
                 </span>
-                <div className="absolute inset-0 bg-[#1CA8CB] w-0 group-hover:w-full rounded-3xl transition-all duration-300 ease-in-out"></div>
+                <div className="absolute inset-0 bg-primary w-0 group-hover:w-full rounded-3xl transition-all duration-300 ease-in-out"></div>
               </button>
             </div>
           </div>
@@ -154,7 +154,7 @@ export default function Hero() {
               data-aos="fade-up"
               data-aos-duration="3000"
             >
-              <button className="relative text-white bg-[#1CA8CB] my-3 px-10 py-4 mr-2 flex justify-center items-center rounded-3xl overflow-hidden group">
+              <button className="relative cursor-pointer text-white bg-primary my-3 px-10 py-4 mr-2 flex justify-center items-center rounded-3xl overflow-hidden group">
                 <span className="relative z-10 flex items-center text-sm sm:text-sm">
                   Explore World{" "}
                   <Image
@@ -165,9 +165,9 @@ export default function Hero() {
                     className=" ml-0 sm:ml-2"
                   />
                 </span>
-                <div className="absolute inset-0 bg-[#15363e] w-0 group-hover:w-full rounded-3xl transition-all duration-300 ease-in-out"></div>
+                <div className="absolute inset-0 bg-secondary w-0 group-hover:w-full rounded-3xl transition-all duration-300 ease-in-out"></div>
               </button>
-              <button className="relative text-white border-1 my-3 px-10 py-4 mr-2 flex justify-center items-center rounded-3xl overflow-hidden group">
+              <button className="relative cursor-pointer text-white border-1 my-3 px-10 py-4 mr-2 flex justify-center items-center rounded-3xl overflow-hidden group">
                 <span className="relative z-10 flex items-center text-sm sm:text-sm">
                   Our Services{" "}
                   <Image
@@ -178,7 +178,7 @@ export default function Hero() {
                     className=" ml-0 sm:ml-2"
                   />
                 </span>
-                <div className="absolute inset-0 bg-[#1CA8CB] w-0 group-hover:w-full rounded-3xl transition-all duration-300 ease-in-out"></div>
+                <div className="absolute inset-0 bg-primary w-0 group-hover:w-full rounded-3xl transition-all duration-300 ease-in-out"></div>
               </button>
             </div>
           </div>
@@ -204,7 +204,7 @@ export default function Hero() {
               data-aos="fade-up"
               data-aos-duration="3000"
             >
-              <button className="relative text-white bg-[#1CA8CB] my-3 px-10 py-4 mr-2 flex justify-center items-center rounded-3xl overflow-hidden group">
+              <button className="relative cursor-pointer text-white bg-primary my-3 px-10 py-4 mr-2 flex justify-center items-center rounded-3xl overflow-hidden group">
                 <span className="relative z-10 flex items-center text-sm sm:text-sm">
                   Explore World{" "}
                   <Image
@@ -215,9 +215,9 @@ export default function Hero() {
                     className=" ml-0 sm:ml-2"
                   />
                 </span>
-                <div className="absolute inset-0 bg-[#15363e] w-0 group-hover:w-full rounded-3xl transition-all duration-300 ease-in-out"></div>
+                <div className="absolute inset-0 bg-secondary w-0 group-hover:w-full rounded-3xl transition-all duration-300 ease-in-out"></div>
               </button>
-              <button className="relative text-white border-1 my-3 px-10 py-4 mr-2 flex justify-center items-center rounded-3xl overflow-hidden group">
+              <button className="relative cursor-pointer text-white border-1 my-3 px-10 py-4 mr-2 flex justify-center items-center rounded-3xl overflow-hidden group">
                 <span className="relative z-10 flex items-center text-sm sm:text-sm">
                   Our Services{" "}
                   <Image
@@ -228,7 +228,7 @@ export default function Hero() {
                     className=" ml-0 sm:ml-2"
                   />
                 </span>
-                <div className="absolute inset-0 bg-[#1CA8CB] w-0 group-hover:w-full rounded-3xl transition-all duration-300 ease-in-out"></div>
+                <div className="absolute inset-0 bg-primary w-0 group-hover:w-full rounded-3xl transition-all duration-300 ease-in-out"></div>
               </button>
             </div>
           </div>

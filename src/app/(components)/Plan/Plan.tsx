@@ -30,19 +30,19 @@ export default function Plan() {
         </div>
       </div>
       <div className="ml-10">
-        <h2 className="text-3xl font-bold mb-4 text-[#113D48] font-montez">
+        <h2 className="text-3xl font-bold mb-4 text-secondary font-montez">
           Let’s Go Together
         </h2>
-        <h1 className="text-5xl font-bold mb-8  text-[#113D48] lg:max-w-80">
+        <h1 className="text-5xl font-bold mb-8  text-secondary lg:max-w-80">
           Plan Your Trip With us
         </h1>
-        <p className="lg:max-w-[420px] text-[#6e7070] text-lg my-4">
+        <p className="lg:max-w-[420px] text-text_gray text-lg my-4">
           There are many variations of passages of available but the majority
           have suffered alteration in some form, by injected hum randomised
           words which don’t look even slightly.
         </p>
         <div className="flex flex-row items-center gap-4 mb-4">
-          <div className="flex justify-center items-center  h-20 w-20 cursor-pointer rounded-full bg-[#1ca8cb]">
+          <div className="flex justify-center items-center  h-20 w-20 cursor-pointer rounded-full bg-primary">
             <Image src={Images.map}
               alt="sakhd"
               width={33}
@@ -51,17 +51,17 @@ export default function Plan() {
             />
           </div>
           <div>
-            <h2 className="text-2xl font-bold mb-4 text-[#113D48] ">
+            <h2 className="text-2xl font-bold mb-4 text-secondary ">
               Exclusive Trip
             </h2>
-            <p className="text-[#6e7070] max-w-80">
+            <p className="text-text_gray max-w-80">
               There are many variations of passages of available but the
               majority.
             </p>
           </div>
         </div>
         <div className="flex flex-row items-center gap-4">
-          <div className="flex justify-center items-center  h-20 w-20 cursor-pointer rounded-full bg-[#1ca8cb]">
+          <div className="flex justify-center items-center  h-20 w-20 cursor-pointer rounded-full bg-primary">
           <Image src={Images.guide}
               alt="sakhd"
               width={33}
@@ -70,20 +70,20 @@ export default function Plan() {
             />
           </div>
           <div>
-            <h2 className="text-2xl font-bold mb-4 text-[#113D48] ">
+            <h2 className="text-2xl font-bold mb-4 text-secondary ">
               Professional guide
             </h2>
-            <p className="text-[#6e7070] max-w-80">
+            <p className="text-text_gray max-w-80">
               There are many variations of passages of available but the
               majority.
             </p>
           </div>
         </div>
-        <button className="relative text-white border-1 my-3 bg-[#113d48] px-10 py-4 mr-2 flex justify-center items-center rounded-full overflow-hidden group">
+        <button className="relative text-white border-1 my-3 bg-secondary px-10 py-4 mr-2 flex justify-center items-center rounded-full overflow-hidden group">
                 <span className="relative z-10 flex items-center text-sm sm:text-sm">
                   Learn More <Image src={Images.arrow} alt="dsjfhl" width={20} height={20} className=" ml-0 sm:ml-2" />
                 </span>
-                <div className="absolute inset-0 bg-[#1CA8CB] w-0 group-hover:w-full rounded-3xl transition-all duration-300 ease-in-out"></div>
+                <div className="absolute inset-0 bg-primary w-0 group-hover:w-full rounded-3xl transition-all duration-300 ease-in-out"></div>
               </button>
         
       </div>

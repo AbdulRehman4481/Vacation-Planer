@@ -48,7 +48,7 @@ export default function TourGuide() {
     customPaging: (i: number) => (
       <div
         className={`w-4 h-4 rounded-full mt-10 ${
-          i === activeIndex ? "bg-[#1CA8CB]" : "border-1 border-black"
+          i === activeIndex ? "bg-primary" : "border-1 border-black"
         } transition-colors duration-200`}
       />
     ),
@@ -56,11 +56,11 @@ export default function TourGuide() {
   };
 
   return (
-    <div className="text-center my-24 bg-[#E9F6F9] ">
-      <h2 className="text-3xl font-bold mb-4 text-[#113D48] font-montez ">
+    <div className="text-center my-24 bg-primary_light ">
+      <h2 className="text-3xl font-bold mb-4 text-secondary font-montez ">
         Meet with Guide{" "}
       </h2>
-      <h1 className="text-4xl font-bold mb-8  text-[#113D48]">Tour Guide</h1>
+      <h1 className="text-4xl font-bold mb-8  text-secondary">Tour Guide</h1>
       <div className="slider-container ">
         <Slider {...settings} className="flex justify-center items-center">
           {[
@@ -82,7 +82,7 @@ export default function TourGuide() {
                 </CardBody>
 
                 <CardFooter className="p-4 flex-col  items-center w-full h-56 mt-32 rounded-3xl bg-white  ">
-                  <div className="bg-[#E9F6F9] flex flex-col justify-center group-hover:bg-[#1CA8CB] rounded-3xl mt-10 w-full h-36">
+                  <div className="bg-primary_light flex flex-col justify-center group-hover:bg-primary rounded-3xl mt-10 w-full h-36">
                     <h2 className="text-lg font-manrope font-bold group-hover:text-white">
                       Abdul Rehman
                     </h2>
@@ -93,19 +93,19 @@ export default function TourGuide() {
                     <div className="flex justify-center">
                       <FaFacebookF
                         size={33}
-                        className="border-1 text-[#1CA8CB] group-hover:text-white border-[#1CA8CB] group-hover:border-white rounded-full p-2 "
+                        className="border-1 text-primary group-hover:text-white border-primary group-hover:border-white rounded-full p-2 "
                       />{" "}
                       <FaXTwitter
                         size={33}
-                        className="border-1 text-[#1CA8CB] group-hover:text-white border-[#1CA8CB] group-hover:border-white rounded-full p-2"
+                        className="border-1 text-primary group-hover:text-white border-primary group-hover:border-white rounded-full p-2"
                       />
                       <FaInstagram
                         size={33}
-                        className="border-1 text-[#1CA8CB] group-hover:text-white border-[#1CA8CB] group-hover:border-white rounded-full p-2"
+                        className="border-1 text-primary group-hover:text-white border-primary group-hover:border-white rounded-full p-2"
                       />
                       <BsYoutube
                         size={33}
-                        className="border-1 text-[#1CA8CB] group-hover:text-white border-[#1CA8CB] group-hover:border-white rounded-full p-2"
+                        className="border-1 text-primary group-hover:text-white border-primary group-hover:border-white rounded-full p-2"
                       />
                     </div>
                   </div>

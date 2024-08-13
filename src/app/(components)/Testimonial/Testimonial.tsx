@@ -74,7 +74,7 @@ export default function Testimonial() {
     customPaging: (i: number) => (
       <div
         className={`w-4 h-4 rounded-full mt-10 ${
-          i === activeIndex ? "bg-[#1CA8CB]" : "border-1 border-black"
+          i === activeIndex ? "bg-primary" : "border-1 border-black"
         } transition-colors duration-200`}
       />
     ),
@@ -83,10 +83,10 @@ export default function Testimonial() {
 
   return (
     <div className="text-center my-24 mx-4">
-      <h2 className="text-3xl font-bold mb-4 text-[#113D48] font-montez">
+      <h2 className="text-3xl font-bold mb-4 text-secondary font-montez">
         Testimonial
       </h2>
-      <h1 className="text-4xl font-bold mb-8 text-[#113D48]">
+      <h1 className="text-4xl font-bold mb-8 text-secondary">
         What Clients Say About Us
       </h1>
       <div className="relative h-fit">
@@ -101,7 +101,7 @@ export default function Testimonial() {
                 index === activeIndex ? "scale-105" : "scale-95"
               } max-w-full`}
             >
-              <div className="bg-[#E9F6F9] rounded-3xl p-5 sm:p-10 m-2">
+              <div className="bg-primary_light rounded-3xl p-5 sm:p-10 m-2">
                 <div className="flex justify-between flex-col sm:flex-row">
                   <div className="flex items-center ">
                     <Image
@@ -112,7 +112,7 @@ export default function Testimonial() {
                       className="rounded-full"
                     />
                     <div className="text-start ml-2">
-                      <h1 className="text-[#113D48] font-bold">
+                      <h1 className="text-secondary font-bold">
                         {testimonial.name}
                       </h1>
                       <h3>Traveler</h3>

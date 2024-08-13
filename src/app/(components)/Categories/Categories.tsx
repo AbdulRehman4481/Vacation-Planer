@@ -1,13 +1,9 @@
 "use client";
+import Images from "@/app/constants/Images";
 import { Card, CardBody, CardFooter } from "@nextui-org/react";
 import Image from "next/image";
 import React, { useState } from "react";
 import Slider from "react-slick";
-import image5 from "../../../../public/assets/Images/alec-douglas-2Kexn4xZm1Q-unsplash.jpg";
-import image2 from "../../../../public/assets/Images/billy-pasco-F5oj6SYoarc-unsplash.jpg";
-import image1 from "../../../../public/assets/Images/gabriel-alenius-USXfF_ONUGo-unsplash.jpg";
-import image3 from "../../../../public/assets/Images/geranimo-f0oe9P9Yixs-unsplash.jpg";
-import image4 from "../../../../public/assets/Images/trail-5yOnGsKUNGw-unsplash.jpg";
 
 export default function Categories() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -25,30 +21,30 @@ export default function Categories() {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2
-        }
+          initialSlide: 2,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
+          slidesToScroll: 1,
+        },
+      },
     ],
     afterChange: (currentSlide: number) => setActiveIndex(currentSlide),
     customPaging: (i: number) => (
       <div
         className={`w-4 h-4 rounded-full mt-10 ${
-          i === activeIndex ? "bg-[#1CA8CB]" : "border-1 border-black"
+          i === activeIndex ? "bg-primary" : "border-1 border-black"
         } transition-colors duration-200`}
       />
     ),
@@ -57,15 +53,21 @@ export default function Categories() {
 
   return (
     <div className="text-center my-24">
-      <h2 className="text-3xl font-bold mb-4 text-[#113D48] font-montez ">
+      <h2 className="text-3xl font-bold mb-4 text-secondary font-montez ">
         Wonderful Place For You
       </h2>
-      <h1 className="text-4xl font-bold mb-8  text-[#113D48]">
+      <h1 className="text-4xl font-bold mb-8  text-secondary">
         Tour Categories
       </h1>
       <div className="slider-container p-10">
         <Slider {...settings}>
-          {[image1, image2, image3, image4, image5].map((image, index) => (
+          {[
+            Images.imageC1,
+            Images.imageC2,
+            Images.imageC3,
+            Images.imageC4,
+            Images.imageC5,
+          ].map((image, index) => (
             <div key={index}>
               <Card className="py-4 m-3 shadow-none">
                 <CardBody className="rounded-3xl relative overflow-hidden h-[270px]">

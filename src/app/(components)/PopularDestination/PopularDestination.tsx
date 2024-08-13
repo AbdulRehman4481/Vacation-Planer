@@ -47,7 +47,7 @@ export default function PopularDestination() {
     customPaging: (i: number) => (
       <div
         className={`w-4 h-4 rounded-full mt-10 ${
-          i === activeIndex ? "bg-[#1CA8CB]" : "border-1 border-black"
+          i === activeIndex ? "bg-primary" : "border-1 border-black"
         } transition-colors duration-200`}
       />
     ),
@@ -56,13 +56,13 @@ export default function PopularDestination() {
 
   return (
     <div className="text-center my-24">
-      <h2 className="text-3xl font-bold mb-4 text-[#113D48] font-montez ">
+      <h2 className="text-3xl font-bold mb-4 text-secondary font-montez ">
         Best Recommended Places
       </h2>
-      <h1 className="text-4xl font-bold mb-8  text-[#113D48]">
+      <h1 className="text-4xl font-bold mb-8  text-secondary">
         Popular Destination we offer for all
       </h1>
-      <p className="  text-[#113D48]">
+      <p className="  text-secondary">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </p>
@@ -92,12 +92,12 @@ export default function PopularDestination() {
                   <h2 className="text-lg font-manrope font-bold">
                     Langtang Valley
                   </h2>
-                  <span className="text-[#6e7070]">
+                  <span className="text-text_gray">
                     <FaLocationDot className="inline " /> Bhutan,Pokhara
                   </span>
                   <span className="text-2xl font-bold">
                     $250
-                    <span className="text-[#6e7070] text-lg font-medium">
+                    <span className="text-text_gray text-lg font-medium">
                       /Person
                     </span>
                   </span>
@@ -105,7 +105,7 @@ export default function PopularDestination() {
                     <span className="flex justify-center items-center">
                       <BsClock className="inline" />6 Days
                     </span>
-                    <button className="relative text-[#113d48] border-1 my-3 px-5 py-4 mr-2 hover:text-white flex justify-center items-center rounded-3xl overflow-hidden group">
+                    <button className="relative text-secondary border-1 my-3 px-5 py-4 mr-2 hover:text-white flex justify-center items-center rounded-3xl overflow-hidden group">
                       <span className="relative z-10 flex items-center text-sm sm:text-sm ">
                         Book Now{" "}
                         <Image
@@ -115,7 +115,7 @@ export default function PopularDestination() {
                           alt="hlkj"
                         />
                       </span>
-                      <div className="absolute inset-0 bg-[#1CA8CB] w-0 group-hover:w-full rounded-3xl transition-all duration-300 ease-in-out"></div>
+                      <div className="absolute inset-0 bg-primary w-0 group-hover:w-full rounded-3xl transition-all duration-300 ease-in-out"></div>
                     </button>
                   </div>
                 </CardFooter>

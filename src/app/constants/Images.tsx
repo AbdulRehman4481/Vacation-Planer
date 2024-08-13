@@ -9,6 +9,11 @@ const Images = {
   imageD3: "/assets/Images/destination_1_3.jpg",
   imageD4: "/assets/Images/destination_1_4.jpg",
   imageD5: "/assets/Images/destination_1_5.jpg",
+  imageC5: "/assets/Images/alec-douglas-2Kexn4xZm1Q-unsplash.jpg",
+  imageC2: "/assets/Images/billy-pasco-F5oj6SYoarc-unsplash.jpg",
+  imageC1: "/assets/Images/gabriel-alenius-USXfF_ONUGo-unsplash.jpg",
+  imageC3: "/assets/Images/geranimo-f0oe9P9Yixs-unsplash.jpg",
+  imageC4: "/assets/Images/trail-5yOnGsKUNGw-unsplash.jpg",
   arrow: "/assets/Images/arrow-right3.svg",
   map: "/assets/Images/map3.svg",
   guide: "/assets/Images/guide.svg",
@@ -28,6 +33,7 @@ const Images = {
   brand2: "/assets/Images/brand_1_2.svg",
   brand3: "/assets/Images/brand_1_4.svg",
   worldLogo: "/assets/Images/logo3.svg",
+  worldLogo2: "/assets/Images/logo4.svg",
 };
 
 export default Images;
