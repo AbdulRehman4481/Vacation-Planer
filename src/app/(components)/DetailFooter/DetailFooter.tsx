@@ -16,7 +16,7 @@ export default function DetailFooter() {
   return (
     <div className="my-20">
       <div className="flex md:justify-around flex-col md:flex-row mb-12 justify-center items-center">
-        <h1 className="text-secondary text-4xl max-w-[440px] font-bold">
+        <h1 className="text-secondary text-4xl max-w-[440px] text-center md:text-start font-bold">
           Get Updated The Latest Newsletter
         </h1>
         <div className="flex mt-2 sm:mt-0 flex-col sm:flex-row justify-center items-center p-2">
@@ -34,7 +34,7 @@ export default function DetailFooter() {
         </div>
       </div>
       <hr className="mx-14" />
-      <div className="flex flex-col sm:flex-row mx-10 sm:mx-0 justify-around my-10">
+      <div className="flex flex-col sm:flex-row mx-5 sm:mx-0 justify-around my-10">
         <div className="lg:flex ">
           <div className="">
             <div className="flex">
@@ -77,7 +77,7 @@ export default function DetailFooter() {
               />
             </div>
           </div>
-          <div className="flex flex-col gap-2 mx-2">
+          <div className="flex flex-col gap-2 mx-2 my-5 sm:my-0">
             <h2 className="text-xl text-secondary">Quick Link</h2>
             <span className="text-text_gray hover:text-primary font-bold text-[13px]   transition-all duration-300 cursor-pointer">
               <FaChevronRight className="inline" size={15} />
@@ -101,7 +101,7 @@ export default function DetailFooter() {
             </span>
           </div>
         </div>
-        <div className=" lg:flex ">
+        <div className="my-5 sm:my-0 lg:flex ">
           <div className="flex flex-col gap-2 mx-3">
             <h2 className="text-xl text-secondary">Get In Touch</h2>
             <div className="flex gap-2">
@@ -143,7 +143,7 @@ export default function DetailFooter() {
               </h1>
             </div>
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 my-5 sm:my-0">
             <h2 className="text-xl text-secondary">Instagram Post</h2>
             <div className="">
               <div className="flex gap-4 sm:gap-2 mb-4">

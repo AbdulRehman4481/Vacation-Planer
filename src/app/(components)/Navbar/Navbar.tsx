@@ -6,10 +6,13 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
+  useDisclosure,
 } from "@nextui-org/react";
 import { IoCloseSharp, IoReorderThree } from "react-icons/io5";
 import Image from "next/image";
 import Images from "@/app/constants/Images";
+import Register from "../Register/Register";
+import Login from "../Login/Login";
 import { FaChevronRight } from "react-icons/fa";
 
 function Sidebar({ isOpen, toggleSidebar }: any) {
@@ -85,6 +88,7 @@ function Sidebar({ isOpen, toggleSidebar }: any) {
 
 export default function App() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   const toggleSidebar = () => setSidebarOpen(!isSidebarOpen);
 
@@ -126,14 +130,14 @@ export default function App() {
         <NavbarContent justify="end" className="hidden md:flex">
           <NavbarItem>
             <Link
-              className="no-underline relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
-              href="#"
+              className="no-underline cursor-pointer relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+               onClick={onOpen}
             >
               Login
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Button as={Link} color="primary" href="#" variant="flat">
+          <Button as={Link} color="primary" variant="flat" onClick={onOpen}>
               Sign Up
             </Button>
           </NavbarItem>
@@ -151,6 +155,8 @@ export default function App() {
       </Navbar>
 
       <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+      <Register isOpen={isOpen} onOpenChange={onOpenChange} />
+      <Login isOpen={isOpen} onOpenChange={onOpenChange} />
     </>
   );
 }
