@@ -4,9 +4,10 @@ import Slider from "react-slick";
 
 import Images from "@/app/constants/Images";
 import { Card, CardBody, CardFooter } from "@nextui-org/react";
-import Image from "next/image";
 import { BsClock } from "react-icons/bs";
+import { FaArrowRight } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import MyImage from "../Image/Image";
 
 export default function PopularDestination() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -79,11 +80,11 @@ export default function PopularDestination() {
               <Card className=" m-3 rounded-3xl shadow-none border-1 transition-all duration-300 hover:m-2 hover:shadow-lg ">
                 <CardBody className="rounded-3xl relative overflow-hidden h-[270px]">
                   <div className="rounded-3xl overflow-hidden w-full h-full">
-                    <Image
+                    <MyImage
                       alt="Card background"
-                      className="rounded-3xl overflow-hidden transition-transform duration-500 ease-in-out transform hover:scale-105 object-cover object-center"
+                      className="rounded-3xl aspect-square overflow-hidden w-full h-full object-cover object-center"
                       src={image}
-                      layout="fill"
+                      isZoomed={true}
                     />
                   </div>
                 </CardBody>
@@ -103,17 +104,12 @@ export default function PopularDestination() {
                   </span>
                   <div className="flex justify-between w-full items-center">
                     <span className="flex justify-center items-center">
-                      <BsClock className="inline" />6 Days
+                      <BsClock className="inline mx-1" /> 6 Days
                     </span>
                     <button className="relative text-secondary border-1 my-3 px-5 py-4 mr-2 hover:text-white flex justify-center items-center rounded-3xl overflow-hidden group">
-                      <span className="relative z-10 flex items-center text-sm sm:text-sm ">
+                      <span className="relative font-semibold z-10 flex items-center text-sm sm:text-sm ">
                         Book Now{" "}
-                        <Image
-                          src={Images.arrow}
-                          width={24}
-                          height={24}
-                          alt="hlkj"
-                        />
+                        <FaArrowRight className="mt-1 mx-1"/>
                       </span>
                       <div className="absolute inset-0 bg-primary w-0 group-hover:w-full rounded-3xl transition-all duration-300 ease-in-out"></div>
                     </button>

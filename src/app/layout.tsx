@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { NextUIProvider } from "@nextui-org/react";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 
 const inter = Inter({
   weight: "400",
@@ -16,7 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NextUIProvider>{children}</NextUIProvider>
+        {/* <LazyLoadComponent>
+        </LazyLoadComponent> */}
+          <NextUIProvider>{children}</NextUIProvider>
       </body>
     </html>
   );

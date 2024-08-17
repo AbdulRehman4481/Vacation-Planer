@@ -4,10 +4,10 @@ import Slider from "react-slick";
 
 import Images from "@/app/constants/Images";
 import { Card, CardBody, CardFooter } from "@nextui-org/react";
-import Image from "next/image";
 import { BsYoutube } from "react-icons/bs";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import MyImage from "../Image/Image";
 
 export default function TourGuide() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -72,25 +72,25 @@ export default function TourGuide() {
           ].map((image, index) => (
             <div key={index}>
               <Card className="m-3 p-4 relative rounded-3xl bg-transparent  items-center shadow-none h-[400px] sm:max-w-72 w-full   group">
-                <CardBody className="absolute border-2 border-white p-2 rounded-full h-52 w-52 sm:h-44 sm:w-44  overflow-hidden ">
-                  <Image
+                <CardBody className="absolute p-0  rounded-full border-2 border-white h-52 w-52 sm:h-44 sm:w-44  overflow-hidden ">
+                  <MyImage
                     alt="Card background"
-                    className=" rounded-full overflow-hidden transition-transform duration-500 ease-in-out transform hover:scale-105 object-cover object-center"
+                    className=" rounded-full w-full h-full object-cover object-center"
                     src={image}
-                    layout="fill"
+                    isZoomed={true}
                   />
                 </CardBody>
 
-                <CardFooter className="p-4 flex-col  items-center w-full h-56 mt-32 rounded-3xl bg-white  ">
+                <CardFooter className="p-4 flex-col cursor-pointer items-center w-full h-56 mt-32 rounded-3xl bg-white  ">
                   <div className="bg-primary_light flex flex-col justify-center group-hover:bg-primary rounded-3xl mt-10 w-full h-36">
                     <h2 className="text-lg font-manrope font-bold group-hover:text-white">
                       Abdul Rehman
                     </h2>
-                    <span className="group-hover:text-white">
+                    <span className="group-hover:text-white mb-2">
                       Tourist Guide
                     </span>
 
-                    <div className="flex justify-center">
+                    <div className="flex justify-center gap-2">
                       <FaFacebookF
                         size={33}
                         className="border-1 text-primary group-hover:text-white border-primary group-hover:border-white rounded-full p-2 "

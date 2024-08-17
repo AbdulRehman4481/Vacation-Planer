@@ -1,9 +1,9 @@
 "use client";
 import Images from "@/app/constants/Images";
-import { Card, CardBody, CardFooter } from "@nextui-org/react";
-import Image from "next/image";
+import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 import React, { useState } from "react";
 import Slider from "react-slick";
+import MyImage from "../Image/Image";
 
 export default function Categories() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -72,11 +72,11 @@ export default function Categories() {
               <Card className="py-4 m-3 shadow-none">
                 <CardBody className="rounded-3xl relative overflow-hidden h-[270px]">
                   <div className="rounded-3xl overflow-hidden w-full h-full">
-                    <Image
+                    <MyImage
                       alt="Card background"
-                      className="rounded-3xl overflow-hidden transition-transform duration-500 ease-in-out transform hover:scale-105 object-cover object-center"
+                      className=" aspect-square overflow-hidden  object-cover object-center"
                       src={image}
-                      layout="fill"
+                      isZoomed={true}
                     />
                   </div>
                 </CardBody>

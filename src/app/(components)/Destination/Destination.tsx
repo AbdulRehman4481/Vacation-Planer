@@ -48,11 +48,9 @@ function Destination() {
   return (
     <div className="destination-container m-5">
       <div className="text-center">
-        <h2 className="text-3xl font-bold mb-4 font-montez">
-          Wonderful Place For You
-        </h2>
+        <h2 className="text-3xl font-bold mb-4 font-montez">Top Destination</h2>
         <h1 className="text-4xl font-bold mb-8 text-secondary">
-          Tour Categories
+          Popular Destination
         </h1>
       </div>
       <Swiper
