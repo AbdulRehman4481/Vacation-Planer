@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-const images = [
+const destinations = [
   {
     src: Images.imageD1,
     country: "Maldive",
@@ -86,7 +86,7 @@ function Destination() {
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="relative h-[595px] py-8"
       >
-        {images.map((image, index) => (
+        {destinations.map((image, index) => (
           <SwiperSlide key={index} className="w-full h-full relative">
             <div className="relative">
               <Image

@@ -55,6 +55,14 @@ export default function TourGuide() {
     appendDots: (dots: React.ReactNode) => <div>{dots}</div>,
   };
 
+  const Tourists = [
+    { image: Images.team1 },
+    { image: Images.team2 },
+    { image: Images.team3 },
+    { image: Images.team4 },
+    { image: Images.team5 },
+  ];
+
   return (
     <div className="text-center my-24 bg-primary_light ">
       <h2 className="text-3xl font-bold mb-4 text-secondary font-montez ">
@@ -63,20 +71,14 @@ export default function TourGuide() {
       <h1 className="text-4xl font-bold mb-8  text-secondary">Tour Guide</h1>
       <div className="slider-container ">
         <Slider {...settings} className="flex justify-center items-center">
-          {[
-            Images.team1,
-            Images.team2,
-            Images.team3,
-            Images.team4,
-            Images.team5,
-          ].map((image, index) => (
+          {Tourists.map((image, index) => (
             <div key={index}>
               <Card className="m-3 p-4 relative rounded-3xl bg-transparent  items-center shadow-none h-[400px] sm:max-w-72 w-full   group">
                 <CardBody className="absolute p-0  rounded-full border-2 border-white h-52 w-52 sm:h-44 sm:w-44  overflow-hidden ">
                   <MyImage
                     alt="Card background"
                     className=" rounded-full w-full h-full object-cover object-center"
-                    src={image}
+                    src={image.image}
                     isZoomed={true}
                   />
                 </CardBody>

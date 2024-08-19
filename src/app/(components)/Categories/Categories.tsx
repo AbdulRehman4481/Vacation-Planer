@@ -51,6 +51,14 @@ export default function Categories() {
     appendDots: (dots: React.ReactNode) => <div>{dots}</div>,
   };
 
+  const categoryData = [
+    { image: Images.imageC1, heading: "Hiking" },
+    { image: Images.imageC2, heading: "Cruises" },
+    { image: Images.imageC3, heading: "Wild Life" },
+    { image: Images.imageC4, heading: "Walking" },
+    { image: Images.imageC5, heading: "Air Birds" },
+  ];
+
   return (
     <div className="text-center my-24">
       <h2 className="text-3xl font-bold mb-4 text-secondary font-montez ">
@@ -61,39 +69,25 @@ export default function Categories() {
       </h1>
       <div className="slider-container p-10">
         <Slider {...settings}>
-          {[
-            Images.imageC1,
-            Images.imageC2,
-            Images.imageC3,
-            Images.imageC4,
-            Images.imageC5,
-          ].map((image, index) => (
+          {categoryData.map((image, index) => (
             <div key={index}>
-              <Card className="py-4 m-3 shadow-none">
-                <CardBody className="rounded-3xl relative overflow-hidden h-[270px]">
-                  <div className="rounded-3xl overflow-hidden w-full h-full">
+              <Card className="py-4 m-3 shadow-none ">
+                <CardBody className="rounded-3xl  relative overflow-hidden h-[270px]">
+                  <div className="rounded-3xl cursor-pointer overflow-hidden w-full h-full">
                     <MyImage
                       alt="Card background"
                       className=" aspect-square overflow-hidden  object-cover object-center"
-                      src={image}
+                      src={image.image}
                       isZoomed={true}
                     />
                   </div>
                 </CardBody>
 
                 <CardFooter className="pb-0 pt-2 px-4 flex-col items-center">
-                  <h3 className="text-lg font-semibold">
-                    {
-                      [
-                        "Hiking",
-                        "Cruises",
-                        "Wild Life",
-                        "Walking",
-                        "Air Birds",
-                      ][index]
-                    }
+                  <h3 className="text-lg font-semibold cursor-pointer">
+                    {image.heading}
                   </h3>
-                  <p className="">See More</p>
+                  <p className="cursor-pointer">See More</p>
                 </CardFooter>
               </Card>
             </div>
